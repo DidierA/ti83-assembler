@@ -1,4 +1,4 @@
-CPPFLAGS=-arch x86_64 -m64
+CPPFLAGS=-m64
 #-I/usr/include
 #PATH=/opt/local/bin:/usr/local/bin:./:/bin
 #INCLUDE=-I/usr/include -I/usr/local/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
@@ -28,7 +28,7 @@ tias: tias.cpp
 disassemble: disassemble.cpp
 	$(value CXX) disassemble.cpp $(CPPFLAGS) $(OPT) -o disassemble
 	$(value CXX) disassemble.cpp $(DEBUG) $(CPPFLAGS) $(INCLUDE) -o disassemble-debug
-	strip -no_uuid -A -u -S -X -N -x disassemble
+#	strip -no_uuid -A -u -S -X -N -x disassemble
 
 #create-raw: create-raw.cpp
 #	$(value CXX) create-raw.cpp $(CPPFLAGS) $(OPT) -o create-raw

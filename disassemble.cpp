@@ -1,7 +1,9 @@
 #include <iostream>
+#include <iomanip>
 #include <vector>
 #include <fstream>
 #include <stdio.h>
+#include <math.h>
 #include <string>
 using namespace std;
 
